@@ -1,7 +1,11 @@
-import { bootstrap } from '@angular-architects/module-federation-tools';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment.prod';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { enableProdMode } from '@angular/core';
 
-bootstrap(AppModule, {
-  production: environment.production
-});
+if (environment.production) {
+  enableProdMode();
+}
+
+platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));

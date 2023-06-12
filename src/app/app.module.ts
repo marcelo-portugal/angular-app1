@@ -30,7 +30,12 @@ export class AppModule {
 
   ngDoBootstrap() {
     const ce = createCustomElement(AppComponent, {injector: this.injector});
-    customElements.define('flights-search', ce);
+
+    try {
+      customElements.define('flights-search', ce);
+    } catch(err) {
+      /* Do nothing */
+    }
   }
 
 }

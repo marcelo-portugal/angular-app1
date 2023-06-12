@@ -28,9 +28,9 @@ module.exports = {
       */
 
       shared: {
-        "@angular/core": { },
-        "@angular/common": { },
-        "@angular/router": { },
+        // "@angular/core": { },
+        // "@angular/common": { },
+        // "@angular/router": { },
         "rxjs": {}
       }
     }
