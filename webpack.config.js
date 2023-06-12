@@ -3,7 +3,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 module.exports = {
   output: {
     publicPath: "auto",
-    uniqueName: "angular1"
+    uniqueName: "mfe1"
   },
   optimization: {
     // Only needed to bypass a temporary bug
@@ -13,8 +13,8 @@ module.exports = {
     new ModuleFederationPlugin({
 
       // For remotes (please adjust)
-      name: "angular1",
-      library: { type: "var", name: "angular1" },
+      name: "mfe1",
+      library: { type: "var", name: "mfe1" },
       filename: "remoteEntry.js",
       exposes: {
         './web-components': './src/bootstrap.ts',
@@ -28,9 +28,9 @@ module.exports = {
       */
 
       shared: {
-        "@angular/core": { requiredVersion: "12.0.3" },
-        "@angular/common": { requiredVersion: "12.0.3" },
-        "@angular/router": { requiredVersion: "12.0.3" },
+        "@angular/core": { },
+        "@angular/common": { },
+        "@angular/router": { },
         "rxjs": {}
       }
     }
