@@ -9,6 +9,9 @@ module.exports = {
     // Only needed to bypass a temporary bug
     runtimeChunk: false
   },
+  devServer: {
+    liveReload: false
+  },
   experiments: {
     outputModule: true
   },
