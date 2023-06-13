@@ -21,7 +21,7 @@ module.exports = {
       // For remotes (please adjust)
       name: "mfe1",
       library: { type: "module" },
-      filename: "remoteEntry.js",
+      filename: "remoteEntry.mjs",
       exposes: {
         './web-components': './src/bootstrap.ts',
       },
