@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output, VERSION } from '@angular/core';
 declare const require: any;
 
 @Component({
-  selector: 'app-root',
+  selector: 'mfe1',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
